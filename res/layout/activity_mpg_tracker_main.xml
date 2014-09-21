@@ -1,0 +1,156 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainUserViewContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mpg_background"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.katlic.mpgtracker.MpgTrackerMainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/frontEndMakeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frontEndVehicleLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/frontEndVehicleLabel"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/main_user_make_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/frontEndModelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/frontEndMakeLabel"
+        android:layout_toRightOf="@id/frontEndMakeLabel"
+        android:text="@string/main_user_model_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/frontEndYearLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frontEndVehicleLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/frontEndMakeLabel"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/main_user_year_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/frontEndTransmissionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/frontEndYearLabel"
+        android:layout_alignBottom="@+id/frontEndYearLabel"
+        android:layout_below="@id/frontEndModelLabel"
+        android:layout_toRightOf="@id/frontEndYearLabel"
+        android:text="@string/main_user_transmission_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/frontEndAverageMpg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frontEndVehicleLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/frontEndYearLabel"
+        android:layout_marginTop="20dp"
+        android:text="@string/main_user_avg_mpg_label"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/frontEndVehicleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_user_vehicle_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/userDataContainer"
+        android:background="@drawable/user_log_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/frontEndAverageMpg"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/userDataTableHeadRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/main_user_date_col_head"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/main_user_comment_col_head"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:text="@string/main_user_gal_col_head"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:text="@string/main_user_miles_col_head"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_user_mpg_col_head"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+        </TableRow>
+
+        <ScrollView
+            android:id="@+id/userDataScrollViewContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_log_background"
+            android:scrollbars="none" >
+
+            <TableLayout
+                android:id="@+id/userDataTableLayoutContainer"
+                android:layout_width="match_parent"
+                android:layout_height="392dp" >
+                
+            </TableLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

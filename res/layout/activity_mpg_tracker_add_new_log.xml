@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mpg_background"
+    tools:context="com.katlic.mpgtracker.MpgTrackerAddNewLogActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/add_new_log_form_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/add_new_log_form_label"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/mpg_add_log_gallons_input"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mpg_add_log_comment_input"
+        android:layout_below="@+id/mpg_add_log_comment_input"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/main_user_gal_col_head" />
+
+    <EditText
+        android:id="@+id/mpg_add_log_comment_input"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_new_log_form_header"
+        android:layout_below="@+id/add_new_log_form_header"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/main_user_comment_col_head" />
+
+    <EditText
+        android:id="@+id/mpg_add_log_miles_input"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mpg_add_log_gallons_input"
+        android:layout_alignBottom="@+id/mpg_add_log_gallons_input"
+        android:layout_alignRight="@+id/mpg_add_log_comment_input"
+        android:ems="10"
+        android:hint="@string/main_user_miles_col_head" />
+
+    <EditText
+        android:id="@+id/mpg_add_log_date_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mpg_add_log_gallons_input"
+        android:layout_alignRight="@+id/mpg_add_log_miles_input"
+        android:layout_below="@+id/mpg_add_log_gallons_input"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/main_user_date_col_head"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/add_new_log_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mpg_add_log_date_input"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/mpg_add_log_date_input"
+        android:layout_marginBottom="18dp"
+        android:text="Add New Log" />
+
+    <Button
+        android:id="@+id/remove_log_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_new_log_submit_button"
+        android:layout_alignLeft="@+id/add_new_log_submit_button"
+        android:layout_alignRight="@+id/add_new_log_submit_button"
+        android:layout_marginBottom="33dp"
+        android:text="@string/mpg_remove" />
+
+</RelativeLayout>

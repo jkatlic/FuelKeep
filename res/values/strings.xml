@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MPG Tracker</string>
+    <string name="action_settings">Vehicle</string>
+	
+    <!-- Activity Titles -->
+    <string name="mpg_main_activity_title">MPG Tracker</string>
+    <string name="mpg_setting_activity_title">Vehicle Info</string>
+    <string name="mpg_add_new_activity_title">Log Fill Up</string>
+    
+    <!-- Main Activity Vehicle detail labels -->
+    <string name="main_user_vehicle_label">Vehicle</string>
+    <string name="main_user_make_label">Make:</string>
+    <string name="main_user_model_label">Model:</string>
+    <string name="main_user_year_label">Year:</string>
+    <string name="main_user_transmission_label">Trans:</string>
+    <string name="main_user_avg_mpg_label">Average MPG:</string>
+
+    <!-- Main Activity Table Strings -->
+    <string name="main_user_date_col_head">Date</string>
+    <string name="main_user_comment_col_head">Comment</string>
+    <string name="main_user_gal_col_head">Gal</string>
+    <string name="main_user_miles_col_head">Miles</string>
+    <string name="main_user_mpg_col_head">MPG</string>
+    <string name="main_user_avg_col_footer">Averages</string>
+    <string name="mpg_settings_vehicle_form_label">Vehicle Information:</string>
+    
+    <!-- Form Object Variables -->
+    <string-array name="mpg_vehicle_gearing_select_items">
+	    <item>Automatic</item>
+	    <item>4-Speed</item>
+	    <item>5-Speed</item>
+	    <item>6-Speed</item>
+	    <item>Hybrid</item>
+	    <item>Electric</item>
+  	</string-array>
+  	
+    <string name="add_new_log_form_label">Add new log:</string>
+    <string name="mpg_edit_old_activity_title">Edit log:</string>
+    <string name="mpg_update">Update</string>
+    <string name="mpg_save">Save</string>
+	<string name="mpg_remove">Remove</string>
+</resources>
